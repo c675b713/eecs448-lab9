@@ -1,15 +1,12 @@
-<html>
-    <header>
-    </header>
-    <body>
-        <table border="1">
-    <?php>
-        for($i=1; $i<101; $i++){
-            echo "<tr>";
-            for($j=1; $j<101; $j++){
-                echo "<td><a>" . $i*$j . "</a></td>";
-            }
-        }
-    <?>   
-  </body>
-  </html>
+<?php
+echo "<table border =\"1\">";
+	for ($row=1; $row <= 100; $row++) { 
+		echo "<tr> \n";
+		for ($col=1; $col <= 100; $col++) { 
+		   $p = $col * $row;
+		   echo "<td>$p</td> \n";
+		   	}
+	  	    echo "</tr>";
+		}
+		echo "</table>";
+?>
